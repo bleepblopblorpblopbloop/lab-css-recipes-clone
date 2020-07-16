@@ -1,9 +1,127 @@
 /*Some necessary adjustments*/
-h1, body, html, main {
+/* h1,
+body,
+html,
+main {
+  margin: 0;
+} */
+/*Import the font and set the default size*/
+/* html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+} */
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 100;
+  width: 100vw;
   margin: 0;
 }
-/*Import the font and set the default size*/
-html {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: -350px;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  object-fit: cover;
+  object-position: 100% 50%;
+  width: 100vw;
+  margin-top: -350px;
+}
+
+.title {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 6rem;
+  color: white;
+  margin-top: -450px;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 400px;
+}
+
+.description {
+  font-size: 1.6rem;
+  margin: 0 15vw 0 15vw;
+  color: rgb(117, 117, 117);
+}
+
+.recipe-info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.recipe-info {
+  width: 40vw;
+  height: auto;
+}
+
+.horizontal-line {
+  border: 1px solid gb(117, 117, 117);
+  width: 70vw;
+}
+
+.ingredients-container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 0 15vw;
+}
+
+h3 {
+  font-size: 1.6rem;
+  color: rgb(97, 97, 97);
+}
+
+.ingredient-list {
+  font-size: 1.6rem;
+  color: rgb(117, 117, 117);
+  list-style-type: none;
+  margin: 40px 0 0 -3vw;
+}
+
+.ingredient-list li::before {
+  content: "–   ";
+}
+
+.cooking-info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.cooking-info {
+  width: 40vw;
+  height: auto;
+}
+
+.instruction-container {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0 0 15vw;
+  width: 70vw;
+}
+
+.instruction-list {
+  font-size: 1.6rem;
+  color: rgb(117, 117, 117);
+  margin: 40px 0 100px 0;
+  line-height: 2.3rem;
 }
